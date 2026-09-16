@@ -21,6 +21,8 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: SE3090_Lecture04_Demo/src/LankaMart.Api
 
     - name: Run build / test
       run: npm test || echo "No tests configured, skipping"
+      working-directory: SE3090_Lecture04_Demo/src/LankaMart.Api
